@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flussonic Secure Token</title>
+  <meta charset="utf-8" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <meta content="flussonic,streming,api,auto ganarete key, make easy" name="keywords" />
+  <meta content="Tasherul Islam" name="author" />
+  <meta content="Admin dashboard html template" name="description" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="favicon.png" rel="shortcut icon" />
+  <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="../fast.fonts.net/cssapi/487b73f1-c2d1-43db-8526-db577e4c822b.css" rel="stylesheet" type="text/css" />
+  <link href="bower_components/select2/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+  <link href="bower_components/dropzone/dist/dropzone.css" rel="stylesheet" />
+  <link href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+  <link href="bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" />
+  <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet" />
+  <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet" />
+  <link href="css/main0dc4.css?version=4.1.0" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="all-wrapper menu-side">
+    <div class="layout-w">
+
+
+      <div class="content-w">
+        <!--------------------
+START - Breadcrumbs
+-------------------->
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="https:/apitsoft.com">APitSoft</a></li>
+          <li class="breadcrumb-item"><a href="#">Flussonic</a></li>
+          <li class="breadcrumb-item">
+            <span>Token Script API</span>
+          </li>
+        </ul>
+        <!--------------------
+END - Breadcrumbs
+-------------------->
+        <div class="content-i">
+          <div class="content-box">
+            <div class="element-wrapper">
+              <h4 class="text-center" style="color:#047bf8; font-weight: bold;">Flussonic Secure Token Script</h4>
+              <h6 class="element-header">Developers API</h6>
+              <div class="element-box">
+                <h5 class="form-header">
+                  Genarate a Script
+                  <span class="badge badge-danger">New</span>
+                </h5>
+                <div class="form-desc">
+                  Flussonic auto genarate code your own server or you can set a api for your server put key and make a script ganarate.
+                </div>
+
+                <h6 class="form-header">Genarate Your Script Code</h6>
+                <!--Button trigger modal--><button class="mr-2 mb-2 btn btn-primary"
+                  data-target="#onboardingWideSlideModal" data-toggle="modal" type="button">
+                  Genarate
+                </button>
+                <div aria-hidden="true" class="onboarding-modal modal fade animated" id="onboardingWideSlideModal"
+                  role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg modal-centered" role="document">
+                    <div class="modal-content text-center">
+                      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span class="close-label">Skip</span><span class="os-icon os-icon-close"></span>
+                      </button>
+                      <div class="onboarding-slider-w">
+
+                        <div class="onboarding-slide">
+                          <div class="onboarding-side-by-side">
+                            <div class="onboarding-media">
+                              <img alt="" src="img/bigicon6.png" width="200px" />
+                            </div>
+                            <div class="onboarding-content with-gradient">
+                              <h4 class="onboarding-title">
+                                Documents
+                              </h4>
+                              <div class="onboarding-text">
+                                All are need to type your flussonic details we make genarate script for you.
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <ul class="features-list">
+                                    <li>IP Address</li>
+                                    <li>KEY</li>
+                                    <li>Client IP Address (for track)</li>
+                                    <li>Desync </li>
+                                  </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                  <ul class="features-list">
+                                    <li>Port</li>
+                                    <li>Flussonic Stream Name </li>
+                                    <li>Script Hours</li>
+                                    <li>Link Code [index.M3U8]</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="onboarding-slide">
+                          <div class="onboarding-side-by-side">
+
+
+                            <div class="onboarding-media">
+                              <img alt="" src="img/bigicon5.png" width="200px" />
+                            </div>
+
+
+                            <div class="onboarding-content with-gradient">
+                              <h4 class="onboarding-title">
+                                Request Information
+                              </h4>
+                              <div class="onboarding-text">
+                                Give all information
+                              </div>
+                              <form>
+
+                                <div class="row">
+
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <label for="">IP Address/ Domain</label><input class="form-control"
+                                        placeholder="ip address..." id="ip_address" type="text" />
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <label for="">Port</label><input class="form-control"
+                                        placeholder="port... default port 80" id="port" type="text" value="80" />
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <label for="">Key</label><input class="form-control" placeholder="script key..."
+                                        id="key" type="text" />
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <label for="">Stream Name</label><input class="form-control"
+                                        placeholder="flussonic stream name" id="stram_name" type="text" />
+                                    </div>
+                                  </div>
+
+                                </div>
+
+
+                                <div class="row">
+
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <label for="">Client IP Address</label><input class="form-control"
+                                        placeholder="ip address..." id="client_ip_address" type="text" />
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <label for="">Script Hours</label><input class="form-control"
+                                        placeholder="how long script available" id="script_hours" type="number"
+                                        value="3" />
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <label for="">Desync </label><input class="form-control" placeholder="desync..."
+                                        type="number" id="desync" value="300" />
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <label for="">Link Code</label><input class="form-control"
+                                        placeholder="link code index.m3u8, index.html" id="link_code" type="text"
+                                        value="index.m3u8" />
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </form>
+                            </div>
+
+                          </div>
+                        </div>
+
+
+
+                        <div class="onboarding-slide">
+                          <div class="onboarding-side-by-side">
+                            <div class="onboarding-media">
+                              <img alt="" src="img/bigicon2.png" width="200px" />
+                            </div>
+                            <div class="onboarding-content with-gradient">
+                              <h4 class="onboarding-title">
+                                Genarate Your Code!
+                              </h4>
+                              <div class="onboarding-text">
+                                <button onclick="genarate()" class="btn btn-primary">Genarate</button>
+                              </div>
+                              <div class="row" id="pnlresult">
+                                <div class="col-sm-12">
+                                  <textarea cols="100" rows="4" style="border: 2px solid #047bf8;" id="result"
+                                    class="form-control"></textarea>
+<br/>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+              <div style="display: none; visibility: hidden;" class="element-box">
+                <h5 class="form-header">Regular Modals</h5>
+                <div class="form-desc">
+                  Modals are streamlined, but flexible dialog prompts powered
+                  by JavaScript. They support a number of use cases from user
+                  notification to completely custom content and feature a
+                  handful of helpful subcomponents, sizes, and more. You can
+                  read full bootstrap documentation about Modals by
+                  <a href="https://v4-alpha.getbootstrap.com/components/modal/" target="_blank">clicking here</a>
+                </div>
+
+
+
+                <h6 class="form-header">Media Above Text</h6>
+                <div class="mb-4">
+                  <!--Button trigger modal--><button class="mr-2 mb-2 btn btn-primary"
+                    data-target="#onboardingSlideModal" data-toggle="modal" type="button">
+                    Multistep modal with slider
+                  </button>
+                  <div aria-hidden="true" class="onboarding-modal modal fade animated" id="onboardingSlideModal"
+                    role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-centered" role="document">
+                      <div class="modal-content text-center">
+                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                          <span class="close-label">Skip Intro</span><span class="os-icon os-icon-close"></span>
+                        </button>
+                        <div class="onboarding-slider-w">
+                          <div class="onboarding-slide">
+                            <div class="onboarding-media">
+                              <img alt="" src="img/bigicon5.png" width="200px" />
+                            </div>
+                            <div class="onboarding-content with-gradient">
+                              <h4 class="onboarding-title">
+                                Example Request Information
+                              </h4>
+                              <div class="onboarding-text">
+                                In this example you can see a form where you
+                                can request some additional information from
+                                the customer when they land on the app page.
+                              </div>
+                              <form>
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <label for="">Your Full Name</label><input class="form-control"
+                                        placeholder="Enter your full name..." type="text" value="" />
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="form-group">
+                                      <label for="">Your Role</label><select class="form-control">
+                                        <option>Web Developer</option>
+                                        <option>Business Owner</option>
+                                        <option>Other</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="onboarding-slide">
+                            <div class="onboarding-media">
+                              <img alt="" src="img/bigicon6.png" width="200px" />
+                            </div>
+                            <div class="onboarding-content with-gradient">
+                              <h4 class="onboarding-title">
+                                Showcase App Features
+                              </h4>
+                              <div class="onboarding-text">
+                                In this example you can showcase some of the
+                                features of your application, it is very handy
+                                to make new users aware of your hidden
+                                features. You can use boostrap columns to
+                                split them up.
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <ul class="features-list">
+                                    <li>Fully Responsive design</li>
+                                    <li>Pre-built app layouts</li>
+                                    <li>Incredible Flexibility</li>
+                                  </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                  <ul class="features-list">
+                                    <li>Boxed & Full Layouts</li>
+                                    <li>Based on Bootstrap 4</li>
+                                    <li>Developer Friendly</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="onboarding-slide">
+                            <div class="onboarding-media">
+                              <img alt="" src="img/bigicon2.png" width="200px" />
+                            </div>
+                            <div class="onboarding-content with-gradient">
+                              <h4 class="onboarding-title">
+                                Example of onboarding screen!
+                              </h4>
+                              <div class="onboarding-text">
+                                This is an example of a multistep onboarding
+                                screen, you can use it to introduce your
+                                customers to your app, or collect additional
+                                information from them before they start using
+                                your app.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="mr-2 mb-2 btn btn-primary" data-target="#onboardingFormModal" data-toggle="modal"
+                    type="button">
+                    Modal with form
+                  </button>
+                  <div aria-hidden="true" class="onboarding-modal modal fade animated" id="onboardingFormModal"
+                    role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-centered" role="document">
+                      <div class="modal-content text-center">
+                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                          <span class="close-label">Skip Intro</span><span class="os-icon os-icon-close"></span>
+                        </button>
+                        <div class="onboarding-media">
+                          <img alt="" src="img/bigicon5.png" width="200px" />
+                        </div>
+                        <div class="onboarding-content with-gradient">
+                          <h4 class="onboarding-title">
+                            Example Request Information
+                          </h4>
+                          <div class="onboarding-text">
+                            In this example you can see a form where you can
+                            request some additional information from the
+                            customer when they land on the app page.
+                          </div>
+                          <form>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="">Your Full Name</label><input class="form-control"
+                                    placeholder="Enter your full name..." type="text" value="" />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="">Your Role</label><select class="form-control">
+                                    <option>Web Developer</option>
+                                    <option>Business Owner</option>
+                                    <option>Other</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="mr-2 mb-2 btn btn-primary" data-target="#onboardingFeaturesModal" data-toggle="modal"
+                    type="button">
+                    Modal with feature list
+                  </button>
+                  <div aria-hidden="true" class="onboarding-modal modal fade animated" id="onboardingFeaturesModal"
+                    role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-centered" role="document">
+                      <div class="modal-content text-center">
+                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                          <span class="close-label">Skip Intro</span><span class="os-icon os-icon-close"></span>
+                        </button>
+                        <div class="onboarding-media">
+                          <img alt="" src="img/bigicon6.png" width="200px" />
+                        </div>
+                        <div class="onboarding-content with-gradient">
+                          <h4 class="onboarding-title">
+                            Showcase App Features
+                          </h4>
+                          <div class="onboarding-text">
+                            In this example you can showcase some of the
+                            features of your application, it is very handy to
+                            make new users aware of your hidden features. You
+                            can use boostrap columns to split them up.
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <ul class="features-list">
+                                <li>Fully Responsive design</li>
+                                <li>Pre-built app layouts</li>
+                                <li>Incredible Flexibility</li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-6">
+                              <ul class="features-list">
+                                <li>Boxed & Full Layouts</li>
+                                <li>Based on Bootstrap 4</li>
+                                <li>Developer Friendly</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="mr-2 mb-2 btn btn-primary" data-target="#onboardingTextModal" data-toggle="modal"
+                    type="button">
+                    Modal with text only
+                  </button>
+                  <div aria-hidden="true" class="onboarding-modal modal fade animated" id="onboardingTextModal"
+                    role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-centered" role="document">
+                      <div class="modal-content text-center">
+                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                          <span class="close-label">Skip Intro</span><span class="os-icon os-icon-close"></span>
+                        </button>
+                        <div class="onboarding-media">
+                          <img alt="" src="img/bigicon2.png" width="200px" />
+                        </div>
+                        <div class="onboarding-content with-gradient">
+                          <h4 class="onboarding-title">
+                            Example of onboarding screen!
+                          </h4>
+                          <div class="onboarding-text">
+                            This is an example of a multistep onboarding
+                            screen, you can use it to introduce your customers
+                            to your app, or collect additional information
+                            from them before they start using your app.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <button class="mr-2 mb-2 btn btn-primary" data-target="#onboardingWideFormModal" data-toggle="modal"
+                  type="button">
+                  Modal with form
+                </button>
+                <div aria-hidden="true" class="onboarding-modal modal fade animated" id="onboardingWideFormModal"
+                  role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg modal-centered" role="document">
+                    <div class="modal-content text-center">
+                      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span class="close-label">Skip Intro</span><span class="os-icon os-icon-close"></span>
+                      </button>
+                      <div class="onboarding-side-by-side">
+                        <div class="onboarding-media">
+                          <img alt="" src="img/bigicon5.png" width="200px" />
+                        </div>
+                        <div class="onboarding-content with-gradient">
+                          <h4 class="onboarding-title">
+                            Example Request Information
+                          </h4>
+                          <div class="onboarding-text">
+                            In this example you can see a form where you can
+                            request some additional information from the
+                            customer when they land on the app page.
+                          </div>
+                          <form>
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="">Your Full Name</label><input class="form-control"
+                                    placeholder="Enter your full name..." type="text" value="" />
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group">
+                                  <label for="">Your Role</label><select class="form-control">
+                                    <option>Web Developer</option>
+                                    <option>Business Owner</option>
+                                    <option>Other</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="mr-2 mb-2 btn btn-primary" data-target="#onboardingWideFeaturesModal" data-toggle="modal"
+                  type="button">
+                  Modal with feature list
+                </button>
+                <div aria-hidden="true" class="onboarding-modal modal fade animated" id="onboardingWideFeaturesModal"
+                  role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg modal-centered" role="document">
+                    <div class="modal-content text-center">
+                      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span class="close-label">Skip Intro</span><span class="os-icon os-icon-close"></span>
+                      </button>
+                      <div class="onboarding-side-by-side">
+                        <div class="onboarding-media">
+                          <img alt="" src="img/bigicon6.png" width="200px" />
+                        </div>
+                        <div class="onboarding-content with-gradient">
+                          <h4 class="onboarding-title">
+                            Showcase App Features
+                          </h4>
+                          <div class="onboarding-text">
+                            In this example you can showcase some of the
+                            features of your application, it is very handy to
+                            make new users aware of your hidden features. You
+                            can use boostrap columns to split them up.
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <ul class="features-list">
+                                <li>Fully Responsive design</li>
+                                <li>Pre-built app layouts</li>
+                                <li>Incredible Flexibility</li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-6">
+                              <ul class="features-list">
+                                <li>Boxed & Full Layouts</li>
+                                <li>Based on Bootstrap 4</li>
+                                <li>Developer Friendly</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="mr-2 mb-2 btn btn-primary" data-target="#onboardingWideTextModal" data-toggle="modal"
+                  type="button">
+                  Modal with text only
+                </button>
+                <div aria-hidden="true" class="onboarding-modal modal fade animated" id="onboardingWideTextModal"
+                  role="dialog" tabindex="-1">
+                  <div class="modal-dialog modal-lg modal-centered" role="document">
+                    <div class="modal-content text-center">
+                      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span class="close-label">Skip Intro</span><span class="os-icon os-icon-close"></span>
+                      </button>
+                      <div class="onboarding-side-by-side">
+                        <div class="onboarding-media">
+                          <img alt="" src="img/bigicon2.png" width="200px" />
+                        </div>
+                        <div class="onboarding-content with-gradient">
+                          <h4 class="onboarding-title">
+                            Example of onboarding screen!
+                          </h4>
+                          <div class="onboarding-text">
+                            This is an example of a multistep onboarding
+                            screen, you can use it to introduce your customers
+                            to your app, or collect additional information
+                            from them before they start using your app.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+              </div>
+
+            </div>
+            <!--------------------
+START - Color Scheme Toggler
+-------------------->
+            <div class="floated-colors-btn ">
+              <div class="os-toggler-w">
+                <div class="os-toggler-i">
+                  <div class="os-toggler-pill"></div>
+                </div>
+              </div>
+              <span>Dark </span><span>Script</span>
+            </div>
+            <!--------------------
+END - Color Scheme Toggler
+-------------------->
+            <!--------------------
+START - Chat Popup Box
+-------------------->
+
+
+            <!--------------------
+END - Chat Popup Box
+-------------------->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="display-type"></div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+  <script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+  <script src="bower_components/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+  <script src="bower_components/ckeditor/ckeditor.js"></script>
+  <script src="bower_components/bootstrap-validator/dist/validator.min.js"></script>
+  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+  <script src="bower_components/dropzone/dist/dropzone.js"></script>
+  <script src="bower_components/editable-table/mindmup-editabletable.js"></script>
+  <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+  <script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="bower_components/tether/dist/js/tether.min.js"></script>
+  <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+  <script src="bower_components/bootstrap/js/dist/util.js"></script>
+  <script src="bower_components/bootstrap/js/dist/alert.js"></script>
+  <script src="bower_components/bootstrap/js/dist/button.js"></script>
+  <script src="bower_components/bootstrap/js/dist/carousel.js"></script>
+  <script src="bower_components/bootstrap/js/dist/collapse.js"></script>
+  <script src="bower_components/bootstrap/js/dist/dropdown.js"></script>
+  <script src="bower_components/bootstrap/js/dist/modal.js"></script>
+  <script src="bower_components/bootstrap/js/dist/tab.js"></script>
+  <script src="bower_components/bootstrap/js/dist/tooltip.js"></script>
+  <script src="bower_components/bootstrap/js/dist/popover.js"></script>
+  <script src="js/main0dc4.js?version=4.1.0"></script>
+  <script>
+    $('#pnlresult').hide();
+
+    function genarate() {
+      var ip_address = document.getElementById('ip_address').value;
+      var port = document.getElementById('port').value;
+      var key = document.getElementById('key').value;
+      var stram_name = document.getElementById('stram_name').value;
+      var client_ip_address = document.getElementById('client_ip_address').value;
+      var script_hours = document.getElementById('script_hours').value;
+      var desync = document.getElementById('desync').value;
+      var link_code = document.getElementById('link_code').value;
+
+      $.ajax({
+        type: "POST",
+        url: "api/",
+        data: {
+          'ip': ip_address,
+          'port': port,
+          'key': key,
+          'name': stram_name,
+          'clientip': client_ip_address,
+          'time': script_hours,
+          'desync': desync,
+          'code': link_code,
+        },
+        dataType: 'JSON',
+        error: function (xhr, status, error) {
+          var errorMessage = xhr.status + ': ' + xhr.statusText;
+          alert(errorMessage);
+        },
+        success: function (data) {
+          $('#result').val(data.message);
+        }
+      });
+      //$('#result').val(link_code);
+
+      $('#pnlresult').fadeIn();
+    }
+
+
+  </script>
+</body>
+<!-- Mirrored from light.pinsupreme.com/uikit_modals.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jan 2018 18:10:26 GMT -->
+
+</html>
